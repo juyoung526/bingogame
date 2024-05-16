@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>up & down game</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="gameBox">
+      <h3>숫자맞추기 게임</h3>
+      <div class="contents">
+        <p>게임설명 :</p>
+        <p>
+          1부터 100사이의 숫자를 맞추세요.<br />총 5번의 기회가 주어집니다.
+          <br />숫자를 맞추면 피자를 포장해 드립니다.<br />
+          하지만 맞추지 못 한다면 피자가 조금씩 없어져요!
+        </p>
+      </div>
+      <span>결과화면 : </span><span id="result">up / down / bingo</span>
+      <h4>횟수 : <span id="guessNum">5</span></h4>
+      <form>
+        <label>숫자입력 : </label>
+        <input id="user" />
+        <button id="play">확인</button>
+        <button id="replay">재도전</button>
+      </form>
+      <ul id="chance">
+        <li class="ch01"><img src="img/pizza_05.png" /></li>
+        <li class="ch02"><img src="img/pizza_04.png" /></li>
+        <li class="ch03"><img src="img/pizza_03.png" /></li>
+        <li class="ch04"><img src="img/pizza_02.png" /></li>
+        <li class="ch05"><img src="img/pizza_01.png" /></li>
+        <li class="ch06"><img src="img/over_01.png" /></li>
+        <li class="ch07"><img src="img/win_01.png" /></li>
+      </ul>
+    </div>
+    <script src="custom4.js"></script>
+  </body>
+</html>
